@@ -14,10 +14,22 @@ export const cryptoApi = createApi({
     getCryptos: builder.query({
       query: () => createRequest(`/coins`),
     }),
+    getCryptoDetails: builder.query({
+      query: (coinId) => createRequest(`/coin/${coinId}`),
+    }),
+    getCryptoHistory: builder.query({
+      query: ({ coinId, timeperiod }) => {
+        return createRequest(`coin/${coinId}/history?timePeriod=${timeperiod}`);
+      },
+    }),
   }),
 });
 
-export const { useGetCryptosQuery } = cryptoApi;
+export const {
+  useGetCryptosQuery,
+  useGetCryptoDetailsQuery,
+  useGetCryptoHistoryQuery,
+} = cryptoApi;
 // const options = {
 //   method: "GET",
 //   url: "https://coinranking1.p.rapidapi.com/coins",

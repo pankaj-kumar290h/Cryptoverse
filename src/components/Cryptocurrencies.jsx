@@ -8,7 +8,6 @@ const Cryptocurrencies = ({ count }) => {
   const { data: cryptosList, isFetching } = useGetCryptosQuery();
   const [cryptos, setcryptos] = useState(cryptosList?.data?.coins);
   const [searchTerm, setSearchterm] = useState("");
-  console.log(cryptos);
 
   useEffect(() => {
     const filterData = cryptosList?.data?.coins.filter((coin) =>
