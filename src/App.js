@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Layout, Typography, Space } from "antd";
+import { Layout, Typography } from "antd";
 import "./App.css";
 import {
   Navbar,
@@ -21,20 +21,16 @@ function App() {
           <div className="routes">
             <Routes>
               <Route path="/" element={<Homepage />}></Route>
-            </Routes>
-            <Routes>
+
               <Route path="/exchanges" element={<Exchanges />}></Route>
-            </Routes>
-            <Routes>
+
               <Route
                 path="/cryptocurrencies"
                 element={<Cryptocurrencies />}
               ></Route>
-            </Routes>
-            <Routes>
+
               <Route path="/crypto/:coinId" element={<CryptoDetails />}></Route>
-            </Routes>
-            <Routes>
+
               <Route path="/news" element={<News />}></Route>
             </Routes>
           </div>

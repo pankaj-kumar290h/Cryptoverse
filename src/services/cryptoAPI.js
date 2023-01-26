@@ -6,18 +6,18 @@ const cryptoApiHeaders = {
 };
 const baseUrl = "https://coinranking1.p.rapidapi.com";
 
-const createRequest = (url) => ({ url, Headers: cryptoApiHeaders });
+const createRequest = (url) => ({ url, headers: cryptoApiHeaders });
 export const cryptoApi = createApi({
   reducerPath: "cryptoApi",
   baseQuery: fetchBaseQuery({ baseUrl }),
   endpoints: (builder) => ({
     getCryptos: builder.query({
-      query: () => createRequest("/coins"),
+      query: () => createRequest(`/coins`),
     }),
   }),
 });
 
-export const { useGetCryptosQuery } = createApi;
+export const { useGetCryptosQuery } = cryptoApi;
 // const options = {
 //   method: "GET",
 //   url: "https://coinranking1.p.rapidapi.com/coins",

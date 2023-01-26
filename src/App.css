@@ -23,13 +23,13 @@ a:hover {
 }
 
 .navbar {
-  flex: 0.16;
+  flex: 0.2;
 
   background-color: rgb(0, 21, 41);
 }
 
 .main {
-  flex: 0.84;
+  flex: 0.8;
   width: 100%;
 }
 .routes {
@@ -375,4 +375,36 @@ a:hover {
   flex-direction: column;
   padding: 20px;
   align-items: center;
+}
+
+/* //////////////////////////////////////////// */
+.loading {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.568);
+  font-size: 4rem;
+}
+
+.card-effect {
+  transition: all 0.7s;
+
+  position: relative;
+  overflow: hidden;
+}
+.card-effect:hover {
+  transform: scale(1.2);
+}
+.card-effect p {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+.ant-card-head-title {
+  font-size: 1.2rem;
+  filter: invert(1);
 }
