@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Cryptoverse/static/css/main.80d1af45.css",
+    "main.js": "/Cryptoverse/static/js/main.4b503f63.js",
+    "index.html": "/Cryptoverse/index.html",
+    "main.80d1af45.css.map": "/Cryptoverse/static/css/main.80d1af45.css.map",
+    "main.4b503f63.js.map": "/Cryptoverse/static/js/main.4b503f63.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80d1af45.css",
+    "static/js/main.4b503f63.js"
+  ]
+}
