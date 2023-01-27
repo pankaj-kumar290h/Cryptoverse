@@ -30,6 +30,11 @@ export const {
   useGetCryptoDetailsQuery,
   useGetCryptoHistoryQuery,
 } = cryptoApi;
+
+
+
+
+
 // const options = {
 //   method: "GET",
 //   url: "https://coinranking1.p.rapidapi.com/coins",

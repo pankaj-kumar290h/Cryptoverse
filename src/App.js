@@ -7,7 +7,6 @@ import {
   Exchanges,
   Cryptocurrencies,
   CryptoDetails,
-  News,
 } from "./components";
 
 function App() {
@@ -22,16 +21,14 @@ function App() {
             <Routes>
               <Route path="/" element={<Homepage />}></Route>
 
-              <Route path="/exchanges" element={<Exchanges />}></Route>
-
               <Route
                 path="/cryptocurrencies"
                 element={<Cryptocurrencies />}
               ></Route>
 
-              <Route path="/crypto/:coinId" element={<CryptoDetails />}></Route>
+              <Route path="/exchanges" element={<Exchanges />}></Route>
 
-              <Route path="/news" element={<News />}></Route>
+              <Route path="/crypto/:coinId" element={<CryptoDetails />}></Route>
             </Routes>
           </div>
         </Layout>
